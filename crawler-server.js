@@ -26,7 +26,7 @@ function handleRequest(req, res) {
     page.onLoadFinished = function (status) {
         var result = null;
         var jsFile = headers['x-crawl-script'];
-    	if ('x-use-jqeury' in headers) {
+    	if ('x-use-jquery' in headers) {
 	    	page.injectJs('jquery.js');
     	} 
         page.injectJs(jsFile);
